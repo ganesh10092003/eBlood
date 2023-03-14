@@ -1,30 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.navbar {
-  height: 62px;
-  margin-top: 40px;
-  margin-left: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
+body {
+  font-size: 16px;
 }
 
-.main-nav {
-  margin-left: 300px;
+/** ---------------------------Navbar--------------------------- */
+.navbar {
+  height: 3.125rem;
+  margin: auto;
+  margin-top: 1.875rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 550;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar>a {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+}
+
+.navbar>a>img {
+  width: 35px;
+}
+
+.nav-mid {
+  padding: 0;
+  /* margin-left: 20rem; */
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-#nav-items {
-  height: 30px;
+.nav-items {
+  height: 1.75rem;
+  width: 13.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+#nav-text {
   color: black;
   text-decoration: none;
+  margin: auto;
 }
 
-.nav-text {
-  display: block;
-  width: 200px;
-  justify-self: center;
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+#a-icon {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+
+.icons {
+  width: auto;
+  height: auto;
+}
+
+/** ------------------------Successfully Registered Page------------------------ */
+.registered {
+  background-color: rgb(240 230 230 / 25%);
+  margin: auto;
+  margin-top: 5rem;
+  width: 37.5rem;
+  height: 27.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registered>div {
+  margin: 2px 0;
+}
+
+.register-text {
+  color: #4caf50;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.register-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(#4caf50, #dbdcdb);
+  width: 4rem;
+  height: 4rem;
+  animation: circle 1.5s;
+}
+
+.checkmark {
+  margin: auto;
+}
+
+/** ----------------------Registration Page---------------------- */
+
+/** -----------Gradient Head Tag----------- */
+.gradient-heading {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.gradient {
+  height: 6.25rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(90.1deg, #520608 -1.59%, #46052D -1.58%, #5B080B 14.15%, #6D0E11 31.58%, #831519 46.9%, #961B1F 62.75%, #A14143 93.91%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  padding-left: 3rem;
+}
+
+.heading-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/*! ----------------------ANIMATIONS---------------------- */
+@keyframes circle {
+  from {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  to {
+    height: 6rem;
+    width: 6rem;
+  }
 }
