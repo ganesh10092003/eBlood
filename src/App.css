@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   font-size: 16px;
@@ -9,7 +9,7 @@ body {
   height: 3.125rem;
   margin: auto;
   margin-top: 1.875rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 550;
   display: flex;
@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
 }
 
-.navbar>a {
+.navbar > a {
   margin-left: 1rem;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ body {
   background-color: #e5e5e56a;
 }
 
-.navbar>a>img {
+.navbar > a > img {
   width: 35px;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 #nav-text:hover {
-  color: #870d0d;
+  color: #bbeb21; /*#870d0d*/
 }
 
 .nav-right {
@@ -93,13 +93,13 @@ body {
   justify-content: center;
 }
 
-.registered>div {
+.registered > div {
   margin: 2px 0;
 }
 
 .register-text {
   color: #4caf50;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -131,9 +131,18 @@ body {
 .gradient {
   height: 6rem;
   margin-top: 2rem;
-  background: linear-gradient(90.1deg, #520608 -1.59%, #46052D -1.58%, #5B080B 14.15%, #6D0E11 31.58%, #831519 46.9%, #961B1F 62.75%, #A14143 93.91%);
+  background: linear-gradient(
+    90.1deg,
+    #520608 -1.59%,
+    #46052d -1.58%,
+    #5b080b 14.15%,
+    #6d0e11 31.58%,
+    #831519 46.9%,
+    #961b1f 62.75%,
+    #a14143 93.91%
+  );
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   display: flex;
   padding-left: 3rem;
@@ -145,7 +154,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.35rem;
   gap: 15rem;
   cursor: pointer;
