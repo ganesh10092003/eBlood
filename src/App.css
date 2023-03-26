@@ -2,6 +2,7 @@
 
 body {
   font-size: 16px;
+  background-color: #f8eeee;
 }
 
 /** ---------------------------Navbar--------------------------- */
@@ -17,7 +18,7 @@ body {
   justify-content: space-between;
 }
 
-.navbar > a {
+.navbar>a {
   margin-left: 1rem;
   display: flex;
   align-items: center;
@@ -29,7 +30,7 @@ body {
   background-color: #e5e5e56a;
 }
 
-.navbar > a > img {
+.navbar>a>img {
   width: 35px;
 }
 
@@ -58,7 +59,8 @@ body {
 }
 
 #nav-text:hover {
-  color: #870d0d; /*#870d0d*/
+  color: #870d0d;
+  /*#870d0d*/
 }
 
 .nav-right {
@@ -93,7 +95,7 @@ body {
   justify-content: center;
 }
 
-.registered > div {
+.registered>div {
   margin: 2px 0;
 }
 
@@ -131,16 +133,14 @@ body {
 .gradient {
   height: 6rem;
   margin-top: 2rem;
-  background: linear-gradient(
-    90.1deg,
-    #520608 -1.59%,
-    #46052d -1.58%,
-    #5b080b 14.15%,
-    #6d0e11 31.58%,
-    #831519 46.9%,
-    #961b1f 62.75%,
-    #a14143 93.91%
-  );
+  background: linear-gradient(90.1deg,
+      #520608 -1.59%,
+      #46052d -1.58%,
+      #5b080b 14.15%,
+      #6d0e11 31.58%,
+      #831519 46.9%,
+      #961b1f 62.75%,
+      #a14143 93.91%);
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
@@ -153,11 +153,74 @@ body {
 .heading-nav {
   display: flex;
   flex-direction: row;
-  margin-top: 1.2rem;
+  margin-top: 1.7rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.35rem;
   gap: 15rem;
   cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+/** -----------Sign_up Page----------- */
+.sign-up {
+  background-color: white;
+  margin-top: 1.2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  height: 40rem;
+  border-radius: 0.5rem;
+}
+
+.fullname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.username,
+.email,
+.firstname,
+.lastname,
+.password,
+.confirm-password {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.username>p,
+.email>p,
+.firstname>p,
+.lastname>p,
+.password>p,
+.confirm-password>p {
+  display: inline-block;
+  width: 7.5rem;
+}
+
+input[name=username],
+input[name=email],
+input[name=firstname],
+input[name=lastname],
+input[name=password],
+input[name=confirm-password] {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  width: 40rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+}
+
+input[name=firstname],
+input[name=lastname] {
+  width: 20rem;
 }
 
 /*! ----------------------ANIMATIONS---------------------- */

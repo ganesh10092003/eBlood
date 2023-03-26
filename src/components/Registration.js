@@ -1,10 +1,32 @@
 import React from "react"
-import Gradient_Headtag from "./sub-components/Gradient_Headtag"
+import GradientHeadtag from "./sub-components/GradientHeadtag"
+import Signup from "./sub-components/Signup"
+export default function Registration(props) {
 
-export default function Registration() {
+  const [activeAll, setActiveAll] = React.useState(["active", "", ""])
+  function Activate1() {
+    setActiveAll(["active", "", ""])
+  }
+  function Activate2() {
+    setActiveAll(["", "active", ""])
+  }
+  function Activate3() {
+    setActiveAll(["", "", "active"])
+  }
+
   return (
     <div className="registration">
-      <Gradient_Headtag />
+      <GradientHeadtag
+        currActive={activeAll}
+        handleClick={[Activate1, Activate2, Activate3]}
+      />
+      {/* <BrowserRouter>
+        <Route path="/" exact component={Sign_up} />
+      </BrowserRouter> */}
+      <Signup
+        data={props.data}
+        handleChange={props.handleChange}
+      />
     </div>
   )
 }
