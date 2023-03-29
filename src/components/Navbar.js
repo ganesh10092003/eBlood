@@ -17,9 +17,9 @@ export default function Navbar() {
         {/* <p className="nav-items"><a href="#" id="nav-text" className="register-now">Register Now</a></p> */}
       </div>
       <div className="nav-right">
-        <a id="a-icon" className="message"><img className="icons" id="message_icon" src={Message_icon} alt="" /></a>
-        <a id="a-icon" className="notification"><img className="icons" id="notification_icon" src={Notification_icon} alt="" /></a>
-        <a id="a-icon" className="profile"><img className="profile_icon" src={Profile_icon} alt="" /></a>
+        <a href="#" id="a-icon" className="message"><img className="icons" id="message_icon" src={Message_icon} alt="" /></a>
+        <a href="#" id="a-icon" className="notification"><img className="icons" id="notification_icon" src={Notification_icon} alt="" /></a>
+        <a href="#" id="a-icon" className="profile"><img className="profile_icon" src={Profile_icon} alt="" /></a>
       </div>
     </div>
   )

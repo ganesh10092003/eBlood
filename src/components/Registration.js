@@ -1,6 +1,6 @@
 import React from "react"
-import GradientHeadtag from "./sub-components/GradientHeadtag"
-import Signup from "./sub-components/Signup"
+import GradientHeadtag from "./GradientHeadtag"
+import Signup from "./Signup"
 export default function Registration(props) {
 
   const [activeAll, setActiveAll] = React.useState(["active", "", ""])

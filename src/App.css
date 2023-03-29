@@ -223,6 +223,17 @@ input[name=lastname] {
   width: 20rem;
 }
 
+.submit-signup {
+  background-color: #4ca94c;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
 /*! ----------------------ANIMATIONS---------------------- */
 @keyframes circle {
   from {
