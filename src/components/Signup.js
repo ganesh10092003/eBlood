@@ -1,49 +1,66 @@
 import React from "react"
 import InputForm from "./InputForm"
 export default function Signup(props) {
+  const pushData = () => {
+    /*push the {props.signUpData} */
+    props.handleSubmit()
+    console.log("push")
+  }
   return (
     <div className="sign-up">
-      <form>
+      <form onSubmit={pushData}>
         <div className="fullname">
-          <div className="firstname">
-            <p>FirstName</p>
-            <input onChange={props.handleChange} type="text" name="firstname" placeholder="Enter FirstName" />
-          </div>
-          <div className="lastname">
-            <p>LastName</p>
-            <input onChange={props.handleChange} type="text" name="lastname" placeholder="Enter LastName" />
-          </div>
+          <InputForm
+            name="firstname"
+            label="FirstName"
+            handleChange={props.handleChange}
+            type="text"
+            placeholder="Enter FirstName"
+            value={props.data.firstname}
+          />
+          <InputForm
+            name="lastname"
+            label="LastName"
+            handleChange={props.handleChange}
+            type="text"
+            placeholder="Enter LastName"
+            value={props.data.lastname}
+          />
         </div>
         <InputForm
           name="username"
-          parahtext="Username"
+          label="Username"
           handleChange={props.handleChange}
           type="text"
           placeholder="Enter Usename"
+          value={props.data.username}
         />
         <InputForm
           name="email"
-          parahtext="Email-ID"
+          label="Email-ID"
           handleChange={props.handleChange}
           type="email"
           placeholder="Enter Email"
+          value={props.data.email}
         />
         <InputForm
           name="password"
-          parahtext="Password"
+          label="Password"
           handleChange={props.handleChange}
           type="password"
           placeholder="Create Password"
+          value={props.data.password}
         />
         <InputForm
           name="confirm-password"
-          parahtext="Confirm Password"
+          label="Confirm Password"
           handleChange={props.handleChange}
           type="password"
           placeholder="Confirm Password"
         />
-        <button className="submit-signup">Submit</button>
+        <br />
       </form>
-    </div>
+      <button type="reset" onClick={pushData} className="submit-signup">Submit</button>
+    </div >
   )
 }

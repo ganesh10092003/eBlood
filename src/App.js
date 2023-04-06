@@ -1,33 +1,57 @@
-import React from 'react';
+import React, { useState } from "react"
 import './App.css';
 import Navbar from './components/Navbar.js'
-import Registered from './components/Registered.js'
+// import Registered from './components/Registered.js'
 import Registration from './components/Registration.js'
 
 export default function App() {
-  const [signUpData, setSignUpData] = React.useState(
+  const [userData, setUserData] = useState(
     {
       firstname: "",
       lastname: "",
       username: "",
       email: "",
-      password: ""
+      password: "",
+      phone: "",
+      age: "",
+      bloodGroup: "",
+      country: "",
+      state: "",
     })
-  function updateData(event) {
-    setSignUpData((prev) => {
+  const listOfCountries =
+    [
+      {
+        id: 0,
+        country: "India",
+        states: ["AP", "UP", "Orissa", "Telangana", "Kerala", "TamilNadu", "WestBengal"]
+      },
+      {
+        id: 1,
+        country: "USA",
+        states: ["California", "Texas", "Florida", "Ohio", "Alaska", "Hawai", "Washington"]
+      },
+      {
+        id: 2,
+        country: "Australia",
+        states: ["Queensland", "New South Wales", "Victoria", "Tasmania"]
+      }
+    ]
+  const updateData = (event) => {
+    setUserData((prev) => {
+      const { name, value } = event.target
       return {
         ...prev,
-        [event.target.name]: event.target.value
+        [name]: (name === "country") ? listOfCountries[value].country : value
       }
     })
   }
-  console.log(signUpData);
+  console.log(userData);
   return (
     <div className="App">
       <Navbar />
       {/* <Registered /> */}
       <Registration
-        data={signUpData} handleChange={updateData}
+        data={userData} handleChange={updateData} countries={listOfCountries}
       />
     </div>
   );
