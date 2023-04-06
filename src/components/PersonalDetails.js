@@ -10,7 +10,7 @@ export default function PersonalDetails(props) {
     // console.log(event.target.value)
     setSelectedIndex(event.target.value)
   }
-  console.log("inside Parent", selectedIndex);
+  // console.log("inside Parent", selectedIndex);
   return (
     <div className="personal-details">
       <form>

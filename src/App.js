@@ -39,6 +39,13 @@ export default function App() {
   const updateData = (event) => {
     setUserData((prev) => {
       const { name, value } = event.target
+      if (name === "country") {
+        return {
+          ...prev,
+          [name]: listOfCountries[value].country,
+          state: ""
+        }
+      }
       return {
         ...prev,
         [name]: (name === "country") ? listOfCountries[value].country : value
