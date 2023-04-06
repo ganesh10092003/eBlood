@@ -17,7 +17,7 @@ export default function Registration(props) {
         <Signup
           data={props.data}
           handleChange={props.handleChange}
-          handleSubmit={Activate2}
+          handleSubmit={(Activate2)}
         />)
     })
   }

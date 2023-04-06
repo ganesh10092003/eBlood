@@ -14,7 +14,8 @@ export default function InputForm(props) {
           name={props.name}
           placeholder={props.placeholder}
           onChange={props.handleChange}
-          value={props.value}></textarea>
+        // value={props.value}
+        ></textarea>
       );
     }
     else if (props.name === "bloodGroup") {       //* ---------------BLOOD GROUP DROP-DOWN---------------
@@ -71,7 +72,7 @@ export default function InputForm(props) {
     else {            //* ---------------REST ALL INPUT TAGs---------------
       return (
         <input
-          value={props.value}
+          // value={props.value}
           onChange={props.handleChange}
           type={props.type}
           name={props.name}

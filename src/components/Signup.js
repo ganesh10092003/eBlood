@@ -1,9 +1,9 @@
 import React from "react"
 import InputForm from "./InputForm"
 export default function Signup(props) {
-  const pushData = () => {
+  const pushData = (e) => {
     /*push the {props.signUpData} */
-    props.handleSubmit()
+    // props.handleSubmit()
     console.log("push")
   }
   return (
@@ -60,7 +60,7 @@ export default function Signup(props) {
         />
         <br />
       </form>
-      <button type="reset" onClick={pushData} className="submit-signup">Submit</button>
+      <button type="reset" onClick={props.handleSubmit} className="submit-signup">Submit</button>
     </div >
   )
 }
